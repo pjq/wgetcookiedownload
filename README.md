@@ -1,4 +1,6 @@
-wgetcookiedownload
-==================
+Run this bash on any Linux.
 
-Use wget download files with cookie dependency
+chmod +x downloadswf.sh
+./downloadswf.sh downloadurls.txt
+
+Then the files will be downloaded in ./output
