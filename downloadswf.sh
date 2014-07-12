@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #wget --load-cookies=cookie --keep-session-cookies  http://joy4girl.com/wp-content/games/custom/P/princess-ariel-shoes-design.swf -cS 
 #wget -i ${URLS} --load-cookies=cookie --keep-session-cookies  
 echo "./$@ downloadurls.txt"
