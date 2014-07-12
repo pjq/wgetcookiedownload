@@ -1,4 +1,4 @@
 <?php
-$output = shell_exec('sh downloadswf.sh downloadurls.txt');
+$output = shell_exec('bash downloadswf.sh downloadurls.txt');
 echo "<pre>$output</pre>";
 ?>
