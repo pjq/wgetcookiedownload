@@ -22,17 +22,17 @@ do
     if [[ ${line} == *.jpg ]];then
         echo "Downloading jpg to ${OUTPUT_JPG} ..."
         cd ${OUTPUT_JPG}
-        wget -q --load-cookies=../cookie --keep-session-cookies ${line} >/dev/null
+        wget -cS -q --load-cookies=../cookie --keep-session-cookies ${line} >/dev/null
         cd ..
     elif [[ ${line} == *.swf ]];then
         echo "Downloading swf to ${OUTPUT_SWF} ..."
         cd ${OUTPUT_SWF}
-        wget  --load-cookies=../cookie --keep-session-cookies ${line}
+        wget -cS  --load-cookies=../cookie --keep-session-cookies ${line}
         cd ..
     else
         echo "Downloading other to ${OUTPUT_OTHER} ..."
         cd ${OUTPUT_OTHER}
-        wget -q --load-cookies=../cookie --keep-session-cookies ${line} >/dev/null
+        wget -cS -q --load-cookies=../cookie --keep-session-cookies ${line} >/dev/null
         cd ..
     fi
 done<${URLS}
